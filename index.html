@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Avalie sua Mentoria!</title>
+    <link rel="icon" href="./images/estrelabranca.svg"/>
+
+    <link rel="stylesheet" href="./styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>avalie a sua mentoria</h1>
+
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+
+      <div id="baloon-stars">
+        <img src="./images/balao.svg" alt="Balão de fala com três de cinco estrelas preenchidas">
+
+        <div id="stars-group">
+          <img src="./images/estrelabranca.svg" alt="Estrela Branca"/>
+          <img src="./images/estrelabranca.svg" alt="Estrela Branca"/>
+          <img src="./images/estrelabranca.svg" alt="Estrela Branca"/>
+          <img src="./images/estrelapreta.svg" alt="Estrela Preta"/>
+          <img src="./images/estrelapreta.svg" alt="Estrela Preta"/>
+        </div>
+      </div>
+    </header>
+
+    <div id="personal-data">
+      <legend>Informações pessoais</legend>
+    </div>
+
+    <form>
+      <fieldset>
+        <div id="name-surname">
+          <div class="input-wrapper">
+            <label for="rating-name">Nome</label>
+            <input type="text" id="rating-name" required placeholder=" ">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="rating-surnmae">Sobrenome</label>
+            <input type="text" id="rating-surname" required placeholder=" ">
+          </div>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="rating-email">E-mail <span>(digite um email válido)</span></label>
+          <input type="email" id="rating-email" required placeholder=" "> 
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do mentor</legend>
+
+        <div class="input-wrapper">
+          <label for="rating-mentor">Selecione quem foi o seu mentor</label>
+          <select name="Mentor" id="rating-mentor" required>
+            <option value="none">-- Selecione o seu mentor aqui --</option>
+            <option value="JC">João Carlos</option>
+            <option value="VV">Valmir Vieira</option>
+            <option value="BO">Bilmiro Oliveira</option>
+          </select>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="rating-feedback">Feedback sobre o mentor</label>
+          <textarea name="" id="rating-feedback" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-wrapper-checkbox">
+          <input type="checkbox" id="rating-doubts">
+          <label for="rating-doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agendando próxima mentoria</legend>
+        
+        <div id="date-times">
+            <div class="input-wrapper-date">
+              <label for="rating-date">Data <span>(DD/MM/AAAA)</span></label>
+              <input type="date" id="rating-date"/>
+            </div>
+        
+        
+            <div class="input-wrapper">
+              <label for="rating-start">Das</label>
+              <input type="time" id="rating-start"/>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="rating-end">Até</label>
+              <input type="time" id="rating-end"/>
+            </div>
+          
+        </div>
+      </fieldset>
+
+      <button>SALVAR</button>
+    </form>
+  </body>
+</html>
